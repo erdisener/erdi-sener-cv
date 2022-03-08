@@ -127,6 +127,12 @@ body.scale-cv {
 .scale-cv .interests__icon {
     font-size: 1rem;
 }
+.education.section {
+    padding-top: 2.5rem;
+}
+.interests.section {
+    padding-top: 2.5rem;
+}
 .scale-cv .education__container,
 .scale-cv .experience__container,
 .scale-cv .certificate__container {
@@ -362,6 +368,7 @@ img {
 .education__content,
 .experience__content {
     display: flex;
+    text-align: justify;
 }
 .education__time,
 .experience__time {
@@ -579,24 +586,40 @@ img {
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
-  background: var(--text-color);
+  background-color: var(--text-color-light);
   animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 .bar .progress-line.html span{
-  width: 90%;
-}
-.bar .progress-line.css span{
-  width: 60%;
-}
-.bar .progress-line.jquery span{
-  width: 85%;
-}
-.bar .progress-line.python span{
-  width: 50%;
-}
-.bar .progress-line.mysql span{
   width: 75%;
 }
+.bar .progress-line.css span{
+  width: 75%;
+}
+.bar .progress-line.javascript span{
+  width: 50%;
+}
+.bar .progress-line.bootstrap span{
+  width: 75%;
+}
+.bar .progress-line.vue span{
+    width: 30%;
+}
+.bar .progress-line.node span{
+    width: 15%;
+  }
+.bar .progress-line.php span{
+    width: 60%;
+}
+.bar .progress-line.mysql span{
+  width: 90%;
+}
+.bar .progress-line.git span{
+    width: 75%;
+}
+
+  .bar .progress-line.figma span{
+    width: 75%;
+  }
 .progress-line span::before{
   position: absolute;
   content: "";
